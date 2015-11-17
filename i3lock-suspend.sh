@@ -38,7 +38,7 @@ else
     echo 'i3wm doesn't appear to be running. Can't lock.'
     read -r -p "do you want to $PM_OPT anyway [y/N?] "
 
-    if [[ $($REPLY | egrep -c '[Yy]+') -gt 1 ]]
+    if [[ $($REPLY | egrep -c '[Yy]+') -ge 1 ]]
     then
         # suspend
         sytemctl $PM_OPT
